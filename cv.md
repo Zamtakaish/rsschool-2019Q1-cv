@@ -5,14 +5,6 @@
 
 ## About me
 
-### Biography:
-
-I began learning programming mainly after entering [Belarussian State University of Informatics and Radioelectronics](https://www.bsuir.by/ru/fksis) in 2010.
-In 2013 after 5th semester due to various issues I changed my full-time edication form to distant, then stopped education.
-In summer 2014 I entered Java courses JD1 by IT-Academy and after completing first stage sucessfully passed interview to second stage in EPAM,
-bit have to abandon courses because of finiding non-IT work that I desired long ago.
-Today I renew my studying programming choosing Javascript as a beginning stage for future work.
-
 ### Main goal:  
 
 I want to get proper skills to find job in web development. There is still option for frontend/backend/full-stack, but it is not a concern right now.
