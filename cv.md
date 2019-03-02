@@ -33,7 +33,7 @@ Acquired skills will help me to form and start my own project(-s) and extend my 
    
     _**Desirable:** biology- or bioinformatic-oriented project or any science-based wing._
     
-###Skills:
+### Skills:
  
    1) First two years of BSUIR: computer science basics, algorithms, C++ basics, OOP, cryptologic
    2) Java CE, EE
