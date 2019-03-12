@@ -15,7 +15,6 @@
     src: url("../assets/fonts/VeraSerif.ttf") format("truetype");
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -23,15 +22,24 @@
 
 header{
     width: 1024px;
-/*    padding: 5px;*/
     margin: 0 auto;
     background: #909DC0;
 }
 h1{
-    font-family: "Bodonitown", sans-serif;
-    background: #FFA347;
     border: 5px solid transparent;
     border-bottom-right-radius: 100%;
+    font-family: "Bodonitown", sans-serif;
+    background: #FFA347;
+}
+h1::before{
+    content: 'Z';
+    width: 40px;
+    display: inline-block;
+    margin: 0 20px 0 40px;
+    border: 10px solid #EE782F;
+    border-radius: 50%;
+    text-align: center;
+    color: #C95816;
 }
 h2{
     font-family: "Bodonitown", sans-serif;
@@ -40,85 +48,82 @@ h2{
 h3{
     font-family: "Open Sans Bold", sans-serif;
     font-size: 1em;
-    color: #232B5B;
     text-indent: 12px;
+    color: #232B5B;
+}
 
-}
-.about-me{
-    font-family: "Open Sans Regular", sans-serif;
-    text-indent: 5px;
-    text-align: justify;
-}
-.about-me ul, .about-me ol{
-     font-size: 90%;
-     list-style-position: inside;
- }
-h1::before{
-    content: 'Z';
-    display: inline-block;
-    width: 40px;
-    text-align: center;
-    border: 10px solid #EE782F;
-    border-radius: 50%;
-    margin: 0 20px 0 40px;
-    color: #C95816;
-}
+
 main{
-    display: flex;
     width: 1024px;
     height: auto;
     margin: 0 auto;
-    background: #909DC0;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    flex-direction: row;
     overflow: hidden;
+    background: #909DC0;
 }
+
 .account-info{
-    display: flex;
-    flex-direction: column;
     width: 20%;
-    background: #D2E9FD;
-    align-items: center;
     padding: 15px;
     margin-top: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: "Vera Serif", sans-serif;
     font-size: 15px;
+    background: #D2E9FD;
 }
+.account-info a{
+    text-decoration: none;
+}
+.account-info span{
+    padding: 0 4px;
+    font-family: "Vera Serif", sans-serif;
+    font-size: 13px;
+}
+
 .photo{
     width: 200px;
     border: 4px groove lightgrey;
     border-image: linear-gradient(blue, orange) 20 / 5px;
 }
+
 .name{
-    list-style-type: none;
     padding: 10px 0;
+    list-style-type: none;
     font-size: 15px;
 }
-.account-info a{
-    text-decoration: none;
-}
+
 .contacts-common a, .contacts-common a:visited{
     color: #B36B18;
 }
 .contacts-common a:active{
     color: #E96405;
 }
-.account-info span{
-    font-family: "Vera Serif", sans-serif;
-    font-size: 13px;
-    padding: 0 4px;
-}
+
 .contacts{
     align-self: stretch;
     padding: 10px 0 0;
 }
+
+.contacts-common .fab, .fas{
+    color: #182561;
+}
+.contacts-common{
+    padding: 5px 0;
+    line-height: 1.5;
+    list-style-type: none;
+    font-size: 90%;
+}
+
 .contacts-social-media{
     height: 30px;
     display: flex;
-    font-size: 20px;
-
     list-style-type: none;
+    font-size: 20px;
 }
 .contacts-social-media li{
     width: 30px;
@@ -137,54 +142,56 @@ main{
     background: #5372A6;
     color: #fff;
 }
-.contacts-common .fab, .fas{
-    color: #182561;
-}
-.contacts-common{
-    padding: 5px 0;
-    font-size: 90%;
-    line-height: 1.5;
-    list-style-type: none;
-}
+
 .cv{
     width: 67%;
     padding: 0 30px 50px;
     background: #D2E9FD;
 }
 .cv::before{
-    display: block;
     content: '';
-    width: 115%;
-    height: 80px;
-    border: 0 solid transparent;
-    border-bottom-right-radius: 100%;
-    background: #909DC0;
     position: relative;
     top: -14px;
     left: -30px;
+    width: 115%;
+    height: 80px;
+    display: block;
+    border: 0 solid transparent;
+    border-bottom-right-radius: 100%;
+    background: #909DC0;
 }
 
-.about-me h2, .about-me h3{
-    padding: 20px 0;
-
-}
-p.remark{
-    font-size: 90%;
-    font-style: italic;
+.about-me{
+    font-family: "Open Sans Regular", sans-serif;
+    text-indent: 5px;
+    text-align: justify;
 }
 .about-me *{
     padding: 5px 0;
 }
-footer{
+.about-me ul, .about-me ol{
+    list-style-position: inside;
+    font-size: 90%;
+}
+.about-me h2, .about-me h3{
+    padding: 20px 0;
 
+}
+
+p.remark{
+    font-size: 90%;
+    font-style: italic;
+}
+
+
+footer{
     width: 1024px;
     height: auto;
     margin: 0 auto;
     background: #FFA347;
-
 }
 footer h3{
+    padding: 10px;
     font-size: 80%;
     color: #F8D452;
-    padding: 10px;
 }
