@@ -76,7 +76,7 @@ main{
     font-size: 15px;
     background: #D2E9FD;
 }
-.account-info a{
+main a{
     text-decoration: none;
 }
 .account-info span{
@@ -97,10 +97,10 @@ main{
     font-size: 15px;
 }
 
-.contacts-common a, .contacts-common a:visited{
+main a, main a:visited{
     color: #B36B18;
 }
-.contacts-common a:active{
+main a:active{
     color: #E96405;
 }
 
