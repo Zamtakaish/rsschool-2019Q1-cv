@@ -95,18 +95,48 @@ main{
     padding: 10px 0;
     font-size: 15px;
 }
+.account-info a, .account-info a:visited{
+    text-decoration: none;
+    color: #B36B18;
+}
+.account-info a:active{
+    color: #E96405;
+}
+.account-info span{
+    font-family: "Vera Serif", sans-serif;
+    font-size: 13px;
+    padding: 0 4px;
+}
 .contacts{
     align-self: stretch;
-    padding: 10px;
+    padding: 10px 0 0;
 }
-.contacts-social-media>li{
-    display: inline-block;
-
+.contacts-social-media{
+    height: 30px;
+    display: flex;
+    font-size: 20px;
+    color: #182561;
+    list-style-type: none;
+}
+.contacts-social-media li{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+.contacts-social-media li:hover{
+    background: #5372A6;
+    color: #fff;
+}
+.contacts-common .fab, .fas{
+    color: #182561;
 }
 .contacts-common{
-    list-style-type: square;
-    list-style-position: inside;
     padding: 5px 0;
+    font-size: 90%;
+    line-height: 1.5;
+    list-style-type: none;
 }
 .cv{
     width: 67%;
